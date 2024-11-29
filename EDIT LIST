@@ -1,0 +1,40 @@
+/* !! MAKE SURE THAT IF YOUR USING LIGHT THEME REMOVE ALL .dark-theme !! */
+    .dark-theme .content
+    {
+        background: rgba(255, 255, 255, 0); /* Semi-transparent white */
+        backdrop-filter: blur(10px); /* Adds blur effect */
+        -webkit-backdrop-filter: blur(10px); /* Safari support */
+        border: 1px solid rgba(255, 255, 255, .1); /* Subtle border for aesthetics */
+        border-radius: 10px; /* Rounded corners */
+        padding: 15px; /* Adds some spacing inside */
+
+    .dark-theme .rbx-header /* [NAV BAR] */
+    {
+        background: rgba(255, 255, 255, 0); /* Semi-transparent black */
+        backdrop-filter: blur(10px); /* Adds blur effect */
+        -webkit-backdrop-filter: blur(10px); /* Safari support */
+        border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border for contrast */
+        border-radius: 8px; /* Optional rounded corners */
+    }
+    .dark-theme .rbx-left-col /* [SIMPLE BAR (COL)] */
+    {
+        background: rgba(255, 255, 255, 0); /* Semi-transparent black */
+        backdrop-filter: blur(10px); /* Adds blur effect */
+        -webkit-backdrop-filter: blur(10px); /* Safari support */
+        border: 1px solid rgba(255, 255, 255, .1); /* Subtle border for contrast */
+        border-radius: 8px; /* Optional rounded corners */
+    }
+
+/* SHADOWS SHADOWS SHADOWS SHADOWS SHADOWS SHADOWS SHADOWS SHADOWS SHADOWS */
+  /* Add shadow behind the navbar */
+   .dark-theme .rbx-header {
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.8); 
+  }
+
+  /* Add shadow behind the simple bar */
+  .simple-bar-dark-theme {
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.8);
+  }
+   .dark-theme .content  {
+    box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.8);
+    }}
