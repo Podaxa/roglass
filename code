@@ -8,6 +8,24 @@ EDITABLE STUFF LISTED IN EDIT LIST
 @version        1.0.0
 @description    adds a glass like effect to roblox
 ==/UserStyle== */
+
+@-moz-document domain("roblox.com") {
+    /* Ensure the background is applied on the entire document */
+    html, body {
+        background-color: #000 !important; /* Apply a solid color */
+        background-image: url('Put your jpg image here') !important; /* Apply an image mainly with imgbb with direct links. */
+        background-size: cover !important; /* Ensure the image covers the whole page */
+        background-position: center !important; /* Center the background image */
+        background-repeat: no-repeat !important; /* Prevent the background from repeating */
+        background-attachment: fixed !important;
+    }
+}
+  /**/
+ * {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+}  /* Delete everything from the first /**\ to remove the font */
+
+
 @-moz-document domain("roblox.com")
 {
     .dark-theme .content
@@ -58,33 +76,39 @@ EDITABLE STUFF LISTED IN EDIT LIST
         color: #fff !important; /* White text for readability */
     }
 }
-@-moz-document domain("roblox.com") {
-  /* Add shadow behind the navbar */
-   .dark-theme .rbx-header {
-    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.8); 
-  }
+@-moz-document domain("roblox.com")
+{
+    /* Add shadow behind the navbar */
+    .dark-theme .rbx-header
+    {
+        box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.8);
+    }
 
-  /* Add shadow behind the simple bar */
-  .simple-bar-dark-theme {
-    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.8);
-  }
-   .dark-theme .content  {
-    box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.8);
-    }}
-@-moz-document domain("roblox.com") {
-  /* Apply a blurry shadow and grey stroke to all visible text */
-  *:not([hidden]) {
-    text-shadow: 
-      0px 2px 4px rgba(0, 0, 0, 0.3), /* Subtle blurry shadow */
-      0px 0px 2px rgba(102, 102, 102, .9); /* Light grey stroke effect */
-  }
+    /* Add shadow behind the simple bar */
+    .simple-bar-dark-theme
+    {
+        box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.8);
+    }
+    .dark-theme .content
+    {
+        box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.8);
+    }
+}
+@-moz-document domain("roblox.com")
+{
+    /* Apply a blurry shadow and grey stroke to all visible text */
+    *:not([hidden])
+    {
+        text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3), /* Subtle blurry shadow */
+        0px 0px 2px rgba(102, 102, 102, .9); /* Light grey stroke effect */
+    }
 }
 
 @-moz-document domain("roblox.com")
 {
     /* Glass effect for the navbar */
-    .dark-theme .stack .stack-list .stack-row
-    ,.rbx-tab
+    .dark-theme .stack .stack-list .stack-row,
+    .rbx-tab
     {
         background: rgba(255, 255, 255, 0); /* Semi-transparent black */
         backdrop-filter: blur(10px); /* Adds blur effect */
@@ -92,7 +116,7 @@ EDITABLE STUFF LISTED IN EDIT LIST
         border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border for contrast */
         border-radius: 8px; /* Optional rounded corners */
     }
-     /* Glass effect for the navbar */
+    /* Glass effect for the navbar */
     .dark-theme .rbx-tabs-horizontal .nav-tabs
     {
         background: rgba(255, 255, 255, 0); /* Semi-transparent black */
@@ -101,8 +125,8 @@ EDITABLE STUFF LISTED IN EDIT LIST
         border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border for contrast */
         border-radius: 8px; /* Optional rounded corners */
     }
-         /* Glass effect for the navbar */
-   .dark-theme .section-content
+    /* Glass effect for the navbar */
+    .dark-theme .section-content
     {
         background: rgba(255, 255, 255, 0); /* Semi-transparent black */
         backdrop-filter: blur(10px); /* Adds blur effect */
@@ -110,8 +134,8 @@ EDITABLE STUFF LISTED IN EDIT LIST
         border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border for contrast */
         border-radius: 8px; /* Optional rounded corners */
     }
-             /* Glass effect for the navbar */
-   .dark-theme .stack .card-list .card-item
+    /* Glass effect for the navbar */
+    .dark-theme .stack .card-list .card-item
     {
         background: rgba(255, 255, 255, 0); /* Semi-transparent black */
         backdrop-filter: blur(10px); /* Adds blur effect */
@@ -119,8 +143,10 @@ EDITABLE STUFF LISTED IN EDIT LIST
         border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border for contrast */
         border-radius: 8px; /* Optional rounded corners */
     }
-             /* Glass effect for the navbar */
-   .dark-theme .container-footer
+    /* Glass effect for the navbar */
+    .dark-theme .container-footer,
+    .dark-theme .btn-common-play-game-lg,
+    .skibidi
     {
         background: rgba(255, 255, 255, 0); /* Semi-transparent black */
         backdrop-filter: blur(10px); /* Adds blur effect */
@@ -128,31 +154,242 @@ EDITABLE STUFF LISTED IN EDIT LIST
         border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border for contrast */
         border-radius: 8px; /* Optional rounded corners */
     }
-                 /* Glass effect for the navbar */
-   .dark-theme #catalog-react-page .search-bars
-  ,.dark-theme .catalog-container .sticky .topic-container
-  ,.dark-theme .rbx-header .navbar-search
-  ,.dark-theme #robux-upsell-react-page-wrapper .robux-upsell-container-1 .robux-upsell-item-and-packages-container
-  ,.dark-theme .dropdown-menu
-  ,.popover.bottom>.arrow
-  ,.dark-theme .new-notification-stream-2022 .notification-stream-container .notification-content-view .notification-stream-body, .dark-theme .new-notification-stream-2022 .notification-stream-container .notification-content-view .notification-stream-body .container-empty, .dark-theme .new-notification-stream-2022 .notification-stream-container .notification-content-view .notification-stream-body .notification-stream-loading
-  ,.dark-theme .notification-stream-header, .notification-stream-header.dark-theme
-  ,.dark-theme .new-notification-stream-2022 .notification-stream-container .notification-content-view .notification-stream-body .notification-stream-scrollbar .notification-stream-list
-  ,.dark-theme .new-notification-stream-2022 .notification-stream-container .notification-content-view .notification-stream-body .notification-stream-scrollbar .notification-stream-list .notification-stream-item, .dark-theme .new-notification-stream-2022 .notification-stream-container .notification-content-view .notification-stream-body .notification-stream-scrollbar .notification-stream-list .sendr-notification-background
-  ,.dark-theme .notification-stream-container .notification-content-view
-  ,.dark-theme .chat-container .chat-main .chat-header
-  ,.dark-theme .chat-main
-  ,.dark-theme.btr-profile .btr-games-list .btr-game-button
-  ,.dark-theme .messages .messageDivider
-  ,.dark-theme .table
-  ,.dark-theme .friends-content .avatar-card-content
-  ,.dark-theme .avatar-card-btns
-  ,.dark-theme .avatar-card-container
-  ,.dark-theme .menu-vertical
+    /* Glass effect for the navbar */
+    .dark-theme #catalog-react-page .search-bars,
+    .dark-theme .catalog-container .sticky .topic-container,
+    .dark-theme .rbx-header .navbar-search,
+    .dark-theme #robux-upsell-react-page-wrapper .robux-upsell-container-1 .robux-upsell-item-and-packages-container,
+    .dark-theme .dropdown-menu,
+    .popover.bottom > .arrow,
+    .dark-theme .new-notification-stream-2022 .notification-stream-container .notification-content-view .notification-stream-body,
+    .dark-theme .new-notification-stream-2022 .notification-stream-container .notification-content-view .notification-stream-body .container-empty,
+    .dark-theme .new-notification-stream-2022 .notification-stream-container .notification-content-view .notification-stream-body .notification-stream-loading,
+    .dark-theme .notification-stream-header,
+    .notification-stream-header.dark-theme,
+    .dark-theme .new-notification-stream-2022 .notification-stream-container .notification-content-view .notification-stream-body .notification-stream-scrollbar .notification-stream-list,
+    .dark-theme .new-notification-stream-2022 .notification-stream-container .notification-content-view .notification-stream-body .notification-stream-scrollbar .notification-stream-list .notification-stream-item,
+    .dark-theme .new-notification-stream-2022 .notification-stream-container .notification-content-view .notification-stream-body .notification-stream-scrollbar .notification-stream-list .sendr-notification-background,
+    .dark-theme .notification-stream-container .notification-content-view,
+    .dark-theme .chat-container .chat-main .chat-header,
+    .dark-theme .chat-main,
+    .dark-theme.btr-profile .btr-games-list .btr-game-button,
+    .dark-theme .messages .messageDivider,
+    .dark-theme .table,
+    .dark-theme .friends-content .avatar-card-content,
+    .dark-theme .avatar-card-btns,
+    .dark-theme .avatar-card-container,
+    .dark-theme .menu-vertical
     {
-        background: rgba(255, 255, 255, 0); /* Semi-transparent black */
+        background: rgb(0, 0, 0); /* Semi-transparent black */
         backdrop-filter: blur(10px); /* Adds blur effect */
         -webkit-backdrop-filter: blur(10px); /* Safari support */
         border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border for contrast */
         border-radius: 8px; /* Optional rounded corners */
-    }}
+    }
+}
+@-moz-document domain("roblox.com")
+{
+    /* Default state for buttons with rounded corners */
+    button,
+    a,
+    .btn
+    {
+        border-radius: 12px; /* Rounded corners by default */
+        transition: box-shadow 0.3s ease, background-color 0.3s ease, border-radius 0.3s ease, transform 0.3s ease;
+    }
+
+    /* Glowing effect with rounded corners when the button is clicked (active) */
+    button:active,
+    a:active,
+    .btn:active
+    {
+        box-shadow: 0 0 15px rgba(255, 255, 255, 0.7), 0 0 30px rgba(255, 255, 255, 0.5);
+        background-color: #2a2a2a; /* Optional: darken the button slightly on click */
+        border-radius: 12px; /* Rounded corners */
+        transition: box-shadow 0.3s ease, background-color 0.3s ease, border-radius 0.3s ease, transform 0.3s ease;
+    }
+
+    /* Glowing effect with rounded corners when hovering over buttons */
+    button:hover,
+    a:hover,
+    .btn:hover
+    {
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.3);
+        cursor: pointer;
+        border-radius: 12px; /* Rounded corners on hover */
+        transform: scale(1.05) translateY(2px); /* Slightly grow and move the button down */
+        transition: box-shadow 0.3s ease, border-radius 0.3s ease, transform 0.3s ease;
+    }
+
+    /* Apply smooth transition when the mouse moves away and elements return to default */
+    button,
+    a,
+    .btn
+    {
+        box-shadow: none;
+        background-color: initial; /* Reset the background color */
+        transition: box-shadow 0.3s ease, background-color 0.3s ease, border-radius 0.3s ease, transform 0.3s ease;
+    }
+}
+
+section-content.profile-header-content.ng-scope
+{
+    border-radius: 12px;
+}
+.col-sm-6.section-content.profile-avatar-left
+{
+    border-radius: 12px 0 0 12px;
+}
+img
+{
+    border-radius: 12px;
+}
+.age-rating-details.col-xs-12.section-content
+{
+    border-radius: 50px;
+}
+li.stack-row.badge-row.ng-scope
+{
+    border-radius: 100px;
+    margin-bottom: 10px;
+}
+button.btn-full-width.btn-control-sm.ng-binding
+{
+    border-radius: 50px
+}
+.dark-theme .thumbnail-2d-container
+{
+    background-color: #00000000;
+}
+button.btn-full-width.btn-common-play-game-lg.btn-primary-md.btn-min-width
+{
+    border-radius: 30px;
+}
+.cart-item
+{
+    border-radius: 12px;
+}
+button.btn-more.rbx-private-server-create-button.btn-secondary-md.btn-min-width
+{
+    border-radius: 30px;
+}
+a#upgrade-now-button
+{
+    border-radius: 30px;
+}
+div#header
+{
+    margin: 10px;
+    border-radius: 30px;
+}
+.alert.alert-warning
+{
+    height: 40px;
+    border-radius: 30px;
+}
+.alert.alert-success
+{
+    height: 40px;
+    border-radius: 30px;
+}
+.content
+{
+    margin-top: 20px;
+}
+.shimmer
+{
+    border-radius: 12px;
+}
+ul.dropdown-menu
+{
+    border-radius: 20px 0 0 20px;
+    margin-bottom: 10px;
+}
+button#language-switcher
+{
+    border-radius: 30px;
+}
+div#navigation
+{
+    margin: 10px;
+    margin-top: 20px;
+    border-radius: 20px;
+    height: fit-content;
+    padding-bottom: 10px;
+}
+.btn-navigation-nav-menu-md
+{
+    border-radius: 30px;
+}
+div#games-carousel-page
+{
+    margin-left: 10px;
+}
+.scroller.prev
+{
+    border-radius: 20px;
+}
+@-moz-document domain("roblox.com")
+{
+    /* Enable smooth scrolling for the entire page */
+    html
+    {
+        scroll-behavior: smooth; /* Smooth scroll on page navigation */
+    }
+
+    /* Optional: Add some ease to the scroll transitions */
+    *
+    {
+        scroll-behavior: smooth;
+    }
+}
+@-moz-document url("https://www.roblox.com/games"),
+url("https://www.roblox.com/my/avatar"),
+url("https://www.roblox.com/users/{userId}/profile"),
+url("https://www.roblox.com/users/{userId}/inventory"),
+url("https://www.roblox.com/groups"),
+url("https://create.roblox.com/"),
+url("https://www.roblox.com/my/account"),
+url("https://www.roblox.com/my/messages"),
+url("https://www.roblox.com/my/trades"),
+url("https://www.roblox.com/my/money"),
+url("https://www.roblox.com/users/{userId}/friends"),
+url("https://www.roblox.com/events"),
+url("https://blog.roblox.com/"),
+url("https://en.help.roblox.com/")
+{
+    /* Your custom CSS here */
+}
+
+/* Center the Roblox website layout */
+body
+{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    min-height: 490vh; /* Ensures the body fills the viewport height */
+    overflow-y: auto; /* Enables scrolling if content overflows */
+}
+
+.container
+{
+    width: 100%;
+    min-height: 100vh; /* Ensures container expands with content */
+}
+
+.main-content
+{
+    display: flex;
+    justify-content: center;
+}
+.dark-theme .alert-warning, .light-theme .alert-warning,
+.alert-success,
+.alert {
+    background-color: #f74b5200;
+}
+@-moz-document domain("roblox.com") {
+    /* Hide all feedback */
+    .system-feedback {
+        display: none !important;
+    }
+}
