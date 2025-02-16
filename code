@@ -1,6 +1,7 @@
-|| !! USE STYLUS / STYLISH EXSTENTION FOR THIS !! ||
+USE STYLUS EXTENSION FOR THIS
+MAKE SURE IT IS ENABLE AND HAS PERMISSION
 
-EDITABLE STUFF LISTED IN EDIT LIST
+!!!!!!
 
 /* ==UserStyle==
 @name           roglass
@@ -8,151 +9,173 @@ EDITABLE STUFF LISTED IN EDIT LIST
 @version        1.0.0
 @description    adds a glass like effect to roblox
 ==/UserStyle== */
-
 @-moz-document domain("roblox.com") {
-    /* Ensure the background is applied on the entire document */
-    html, body {
-        background-color: #000 !important; /* Apply a solid color */
-        background-image: url('Put your jpg image here') !important; /* Apply an image mainly with imgbb with direct links. */
-        background-size: cover !important; /* Ensure the image covers the whole page */
-        background-position: center !important; /* Center the background image */
-        background-repeat: no-repeat !important; /* Prevent the background from repeating */
+    :root, html, body {
+        background-color: #000 !important; /* Black as fallback */
+/* BACKGROUND --> */ background-image: url('https://i.ibb.co/GIBBERISH/image-datehere.png') !important; /* It should look like this the link or just delete if you dont want. */
+        background-size: cover !important;                                                              /* And also use imgbb, when uploading. Use the Direct link and paste here */
+        background-position: center !important;
         background-attachment: fixed !important;
+        background-repeat: no-repeat !important;
     }
 }
-  /**/
- * {
+/*  Delete this if you want no font ---> */
+* {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
-}  /* Delete everything from the first /**\ to remove the font */
-
-
-@-moz-document domain("roblox.com")
-{
-    .dark-theme .content
-    {
-        background: rgba(255, 255, 255, 0); /* Semi-transparent white */
-        backdrop-filter: blur(10px); /* Adds blur effect */
-        -webkit-backdrop-filter: blur(10px); /* Safari support */
-        border: 1px solid rgba(255, 255, 255, .1); /* Subtle border for aesthetics */
-        border-radius: 10px; /* Rounded corners */
-        padding: 15px; /* Adds some spacing inside */
+}
+/* Delete everything from the first /**\ to remove the font */
+@-moz-document domain("roblox.com") {
+    .dark-theme .content {
+        background: rgba(255, 255, 255, 0);
+        /* Semi-transparent white */
+        backdrop-filter: blur(10px);
+        /* Adds blur effect */
+        -webkit-backdrop-filter: blur(10px);
+        /* Safari support */
+        border: 1px solid rgba(255, 255, 255, .1);
+        /* Subtle border for aesthetics */
+        border-radius: 10px;
+        /* Rounded corners */
+        padding: 15px;
+        /* Adds some spacing inside */
     }
 
     /* Ensure text within the container is readable */
-    .container-main *
-    {
-        color: #fff !important; /* Adjust text color for readability */
+    .container-main * {
+        color: #fff !important;
+        /* Adjust text color for readability */
     }
 }
 
-@-moz-document domain("roblox.com")
-{
+@-moz-document domain("roblox.com") {
     /* Glass effect for the navbar */
-    .dark-theme .rbx-header
-    {
-        background: rgba(255, 255, 255, 0); /* Semi-transparent black */
-        backdrop-filter: blur(10px); /* Adds blur effect */
-        -webkit-backdrop-filter: blur(10px); /* Safari support */
-        border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border for contrast */
-        border-radius: 8px; /* Optional rounded corners */
+    .dark-theme .rbx-header {
+        background: rgba(255, 255, 255, 0);
+        /* Semi-transparent black */
+        backdrop-filter: blur(10px);
+        /* Adds blur effect */
+        -webkit-backdrop-filter: blur(10px);
+        /* Safari support */
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        /* Subtle border for contrast */
+        border-radius: 8px;
+        /* Optional rounded corners */
     }
 
     /* Glass effect for the simple bar */
-    .dark-theme .rbx-left-col
-    {
-        background: rgba(255, 255, 255, 0); /* Semi-transparent black */
-        backdrop-filter: blur(10px); /* Adds blur effect */
-        -webkit-backdrop-filter: blur(10px); /* Safari support */
-        border: 1px solid rgba(255, 255, 255, .1); /* Subtle border for contrast */
-        border-radius: 8px; /* Optional rounded corners */
+    .dark-theme .rbx-left-col {
+        background: rgba(255, 255, 255, 0);
+        /* Semi-transparent black */
+        backdrop-filter: blur(10px);
+        /* Adds blur effect */
+        -webkit-backdrop-filter: blur(10px);
+        /* Safari support */
+        border: 1px solid rgba(255, 255, 255, .1);
+        /* Subtle border for contrast */
+        border-radius: 8px;
+        /* Optional rounded corners */
     }
 
     /* Ensure text is readable on dark theme */
     .navbar-dark-theme a,
     .simple-bar-dark-theme a,
     .navbar-dark-theme .nav-item,
-    .simple-bar-dark-theme .nav-item
-    {
-        color: #fff !important; /* White text for readability */
+    .simple-bar-dark-theme .nav-item {
+        color: #fff !important;
+        /* White text for readability */
     }
 }
-@-moz-document domain("roblox.com")
-{
+@-moz-document domain("roblox.com") {
     /* Add shadow behind the navbar */
-    .dark-theme .rbx-header
-    {
+    .dark-theme .rbx-header {
         box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.8);
     }
 
     /* Add shadow behind the simple bar */
-    .simple-bar-dark-theme
-    {
+    .simple-bar-dark-theme {
         box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.8);
     }
-    .dark-theme .content
-    {
+    .dark-theme .content {
         box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.8);
     }
 }
-@-moz-document domain("roblox.com")
-{
+@-moz-document domain("roblox.com") {
     /* Apply a blurry shadow and grey stroke to all visible text */
-    *:not([hidden])
-    {
+    *:not([hidden]) {
         text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3), /* Subtle blurry shadow */
-        0px 0px 2px rgba(102, 102, 102, .9); /* Light grey stroke effect */
+        0px 0px 2px rgba(102, 102, 102, .9);
+        /* Light grey stroke effect */
     }
 }
 
-@-moz-document domain("roblox.com")
-{
+@-moz-document domain("roblox.com") {
     /* Glass effect for the navbar */
     .dark-theme .stack .stack-list .stack-row,
-    .rbx-tab
-    {
-        background: rgba(255, 255, 255, 0); /* Semi-transparent black */
-        backdrop-filter: blur(10px); /* Adds blur effect */
-        -webkit-backdrop-filter: blur(10px); /* Safari support */
-        border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border for contrast */
-        border-radius: 8px; /* Optional rounded corners */
+    .rbx-tab {
+        background: rgba(255, 255, 255, 0);
+        /* Semi-transparent black */
+        backdrop-filter: blur(10px);
+        /* Adds blur effect */
+        -webkit-backdrop-filter: blur(10px);
+        /* Safari support */
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        /* Subtle border for contrast */
+        border-radius: 8px;
+        /* Optional rounded corners */
     }
     /* Glass effect for the navbar */
-    .dark-theme .rbx-tabs-horizontal .nav-tabs
-    {
-        background: rgba(255, 255, 255, 0); /* Semi-transparent black */
-        backdrop-filter: blur(10px); /* Adds blur effect */
-        -webkit-backdrop-filter: blur(10px); /* Safari support */
-        border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border for contrast */
-        border-radius: 8px; /* Optional rounded corners */
+    .dark-theme .rbx-tabs-horizontal .nav-tabs {
+        background: rgba(255, 255, 255, 0);
+        /* Semi-transparent black */
+        backdrop-filter: blur(10px);
+        /* Adds blur effect */
+        -webkit-backdrop-filter: blur(10px);
+        /* Safari support */
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        /* Subtle border for contrast */
+        border-radius: 8px;
+        /* Optional rounded corners */
     }
     /* Glass effect for the navbar */
-    .dark-theme .section-content
-    {
-        background: rgba(255, 255, 255, 0); /* Semi-transparent black */
-        backdrop-filter: blur(10px); /* Adds blur effect */
-        -webkit-backdrop-filter: blur(10px); /* Safari support */
-        border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border for contrast */
-        border-radius: 8px; /* Optional rounded corners */
+    .dark-theme .section-content {
+        background: rgba(255, 255, 255, 0);
+        /* Semi-transparent black */
+        backdrop-filter: blur(10px);
+        /* Adds blur effect */
+        -webkit-backdrop-filter: blur(10px);
+        /* Safari support */
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        /* Subtle border for contrast */
+        border-radius: 8px;
+        /* Optional rounded corners */
     }
     /* Glass effect for the navbar */
-    .dark-theme .stack .card-list .card-item
-    {
-        background: rgba(255, 255, 255, 0); /* Semi-transparent black */
-        backdrop-filter: blur(10px); /* Adds blur effect */
-        -webkit-backdrop-filter: blur(10px); /* Safari support */
-        border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border for contrast */
-        border-radius: 8px; /* Optional rounded corners */
+    .dark-theme .stack .card-list .card-item {
+        background: rgba(255, 255, 255, 0);
+        /* Semi-transparent black */
+        backdrop-filter: blur(10px);
+        /* Adds blur effect */
+        -webkit-backdrop-filter: blur(10px);
+        /* Safari support */
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        /* Subtle border for contrast */
+        border-radius: 8px;
+        /* Optional rounded corners */
     }
     /* Glass effect for the navbar */
     .dark-theme .container-footer,
     .dark-theme .btn-common-play-game-lg,
-    .skibidi
-    {
-        background: rgba(255, 255, 255, 0); /* Semi-transparent black */
-        backdrop-filter: blur(10px); /* Adds blur effect */
-        -webkit-backdrop-filter: blur(10px); /* Safari support */
-        border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border for contrast */
-        border-radius: 8px; /* Optional rounded corners */
+    .skibidi {
+        background: rgba(255, 255, 255, 0);
+        /* Semi-transparent black */
+        backdrop-filter: blur(10px);
+        /* Adds blur effect */
+        -webkit-backdrop-filter: blur(10px);
+        /* Safari support */
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        /* Subtle border for contrast */
+        border-radius: 8px;
+        /* Optional rounded corners */
     }
     /* Glass effect for the navbar */
     .dark-theme #catalog-react-page .search-bars,
@@ -178,168 +201,149 @@ EDITABLE STUFF LISTED IN EDIT LIST
     .dark-theme .friends-content .avatar-card-content,
     .dark-theme .avatar-card-btns,
     .dark-theme .avatar-card-container,
-    .dark-theme .menu-vertical
-    {
-        background: rgb(0, 0, 0); /* Semi-transparent black */
-        backdrop-filter: blur(10px); /* Adds blur effect */
-        -webkit-backdrop-filter: blur(10px); /* Safari support */
-        border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border for contrast */
-        border-radius: 8px; /* Optional rounded corners */
+    .dark-theme .menu-vertical {
+        background: rgb(0, 0, 0);
+        /* Semi-transparent black */
+        backdrop-filter: blur(10px);
+        /* Adds blur effect */
+        -webkit-backdrop-filter: blur(10px);
+        /* Safari support */
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        /* Subtle border for contrast */
+        border-radius: 8px;
+        /* Optional rounded corners */
     }
 }
-@-moz-document domain("roblox.com")
-{
+@-moz-document domain("roblox.com") {
     /* Default state for buttons with rounded corners */
     button,
     a,
-    .btn
-    {
-        border-radius: 12px; /* Rounded corners by default */
+    .btn {
+        border-radius: 12px;
+        /* Rounded corners by default */
         transition: box-shadow 0.3s ease, background-color 0.3s ease, border-radius 0.3s ease, transform 0.3s ease;
     }
 
     /* Glowing effect with rounded corners when the button is clicked (active) */
     button:active,
     a:active,
-    .btn:active
-    {
+    .btn:active {
         box-shadow: 0 0 15px rgba(255, 255, 255, 0.7), 0 0 30px rgba(255, 255, 255, 0.5);
-        background-color: #2a2a2a; /* Optional: darken the button slightly on click */
-        border-radius: 12px; /* Rounded corners */
+        background-color: #2a2a2a;
+        /* Optional: darken the button slightly on click */
+        border-radius: 12px;
+        /* Rounded corners */
         transition: box-shadow 0.3s ease, background-color 0.3s ease, border-radius 0.3s ease, transform 0.3s ease;
     }
 
     /* Glowing effect with rounded corners when hovering over buttons */
     button:hover,
     a:hover,
-    .btn:hover
-    {
+    .btn:hover {
         box-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.3);
         cursor: pointer;
-        border-radius: 12px; /* Rounded corners on hover */
-        transform: scale(1.05) translateY(2px); /* Slightly grow and move the button down */
+        border-radius: 12px;
+        /* Rounded corners on hover */
+        transform: scale(1.05) translateY(2px);
+        /* Slightly grow and move the button down */
         transition: box-shadow 0.3s ease, border-radius 0.3s ease, transform 0.3s ease;
     }
 
     /* Apply smooth transition when the mouse moves away and elements return to default */
     button,
     a,
-    .btn
-    {
+    .btn {
         box-shadow: none;
-        background-color: initial; /* Reset the background color */
+        background-color: initial;
+        /* Reset the background color */
         transition: box-shadow 0.3s ease, background-color 0.3s ease, border-radius 0.3s ease, transform 0.3s ease;
     }
 }
 
-section-content.profile-header-content.ng-scope
-{
+section-content.profile-header-content.ng-scope {
     border-radius: 12px;
 }
-.col-sm-6.section-content.profile-avatar-left
-{
+.col-sm-6.section-content.profile-avatar-left {
     border-radius: 12px 0 0 12px;
 }
-img
-{
+img {
     border-radius: 12px;
 }
-.age-rating-details.col-xs-12.section-content
-{
+.age-rating-details.col-xs-12.section-content {
     border-radius: 50px;
 }
-li.stack-row.badge-row.ng-scope
-{
+li.stack-row.badge-row.ng-scope {
     border-radius: 100px;
     margin-bottom: 10px;
 }
-button.btn-full-width.btn-control-sm.ng-binding
-{
+button.btn-full-width.btn-control-sm.ng-binding {
     border-radius: 50px
 }
-.dark-theme .thumbnail-2d-container
-{
+.dark-theme .thumbnail-2d-container {
     background-color: #00000000;
 }
-button.btn-full-width.btn-common-play-game-lg.btn-primary-md.btn-min-width
-{
+button.btn-full-width.btn-common-play-game-lg.btn-primary-md.btn-min-width {
     border-radius: 30px;
 }
-.cart-item
-{
+.cart-item {
     border-radius: 12px;
 }
-button.btn-more.rbx-private-server-create-button.btn-secondary-md.btn-min-width
-{
+button.btn-more.rbx-private-server-create-button.btn-secondary-md.btn-min-width {
     border-radius: 30px;
 }
-a#upgrade-now-button
-{
+a#upgrade-now-button {
     border-radius: 30px;
 }
-div#header
-{
+div#header {
     margin: 10px;
     border-radius: 30px;
 }
-.alert.alert-warning
-{
+.alert.alert-warning {
     height: 40px;
     border-radius: 30px;
 }
-.alert.alert-success
-{
+.alert.alert-success {
     height: 40px;
     border-radius: 30px;
 }
-.content
-{
+.content {
     margin-top: 20px;
 }
-.shimmer
-{
+.shimmer {
     border-radius: 12px;
 }
-ul.dropdown-menu
-{
+ul.dropdown-menu {
     border-radius: 20px 0 0 20px;
     margin-bottom: 10px;
 }
-button#language-switcher
-{
+button#language-switcher {
     border-radius: 30px;
 }
-div#navigation
-{
+div#navigation {
     margin: 10px;
     margin-top: 20px;
     border-radius: 20px;
     height: fit-content;
     padding-bottom: 10px;
 }
-.btn-navigation-nav-menu-md
-{
+.btn-navigation-nav-menu-md {
     border-radius: 30px;
 }
-div#games-carousel-page
-{
+div#games-carousel-page {
     margin-left: 10px;
 }
-.scroller.prev
-{
+.scroller.prev {
     border-radius: 20px;
 }
-@-moz-document domain("roblox.com")
-{
+@-moz-document domain("roblox.com") {
     /* Enable smooth scrolling for the entire page */
-    html
-    {
-        scroll-behavior: smooth; /* Smooth scroll on page navigation */
+    html {
+        scroll-behavior: smooth;
+        /* Smooth scroll on page navigation */
     }
 
     /* Optional: Add some ease to the scroll transitions */
-    *
-    {
+    * {
         scroll-behavior: smooth;
     }
 }
@@ -356,33 +360,31 @@ url("https://www.roblox.com/my/money"),
 url("https://www.roblox.com/users/{userId}/friends"),
 url("https://www.roblox.com/events"),
 url("https://blog.roblox.com/"),
-url("https://en.help.roblox.com/")
-{
-    /* Your custom CSS here */
-}
+url("https://en.help.roblox.com/") {}
 
 /* Center the Roblox website layout */
-body
-{
+body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-    min-height: 490vh; /* Ensures the body fills the viewport height */
-    overflow-y: auto; /* Enables scrolling if content overflows */
+    min-height: 490vh;
+    /* Ensures the body fills the viewport height */
+    overflow-y: auto;
+    /* Enables scrolling if content overflows */
 }
 
-.container
-{
+.container {
     width: 100%;
-    min-height: 100vh; /* Ensures container expands with content */
+    min-height: 100vh;
+    /* Ensures container expands with content */
 }
 
-.main-content
-{
+.main-content {
     display: flex;
     justify-content: center;
 }
-.dark-theme .alert-warning, .light-theme .alert-warning,
+.dark-theme .alert-warning,
+.light-theme .alert-warning,
 .alert-success,
 .alert {
     background-color: #f74b5200;
@@ -391,5 +393,39 @@ body
     /* Hide all feedback */
     .system-feedback {
         display: none !important;
+    }
+}
+@-moz-document domain("roblox.com") {
+    /* Glass effect for the navbar */
+    .dark-theme .avatar .avatar-card-image {
+        background: rgba(255, 255, 255, 0);
+        /* Semi-transparent black */
+        backdrop-filter: blur(10px);
+        /* Adds blur effect */
+        -webkit-backdrop-filter: blur(10px);
+        /* Safari support */
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        /* Subtle border for contrast */
+        border-radius: 30px;
+        /* Optional rounded corners */
+    }
+}
+@-moz-document domain("roblox.com") {
+    /* Glass effect for the navbar */
+    .btn-common-play-game-action-needed-lg,
+    #game-details-play-button-container .btn-common-play-game-lg,
+    #game-details-play-button-container .btn-common-play-game-unplayable-lg {
+        background: rgba(255, 255, 255, 0);
+        /* Semi-transparent black */
+        backdrop-filter: blur(10px);
+        /* Adds blur effect */
+        -webkit-backdrop-filter: blur(10px);
+        /* Safari support */
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        /* Subtle border for contrast */
+        border-radius: 30px;
+        /* Optional rounded corners */
+        width: 296px;
+        height: 62px;
     }
 }
